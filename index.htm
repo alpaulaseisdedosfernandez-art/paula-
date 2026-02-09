@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Language" content="es" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>INTERNET</title>
+
+<style type="text/css">
+html, body {
+    background-color: #CCFF99;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.style1 {
+	text-align: center;
+	font-family: "Bernard MT Condensed";
+	font-size: 60pt;
+	color: #000000;
+	background-color: #66FF99;
+}
+.style2 { background-color: #CCFFFF; }
+.style4 { background-color: #CCFF99; }
+.style5 { background-color: #CCFFCC; }
+.style8 { text-align: justify; }
+.style9 { border: 0 solid #CCFF99; }
+.style10 {
+	background-color: #CCFFCC;
+	font-size: xx-large;
+	text-align: center;
+}
+.style11 {
+	border-width: 0px;
+}
+.style12 {
+	text-align: left;
+}
+
+.submenu-trm {
+	display: none; 
+	background-color: #CCFFCC;
+}
+
+.submenu-trm td {
+	text-align: center;
+	font-size: large;
+	border-bottom: 1px solid #fff;
+}
+
+.submenu-trm a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+    font-family: "Bernard MT Condensed", sans-serif;
+    font-size: 14pt;
+}
+
+.submenu-trm a:hover {
+	background-color: #99FFCC;
+}
+
+tbody.submenu-group:hover .submenu-trm {
+	display: table-row;
+}
+
+.scroll-container {
+	width: 100%;
+	height: auto;
+	overflow: visible;
+	background-color: #CCFF99;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.texto-scroll {
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+    scrollbar-face-color: #66FF99;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contador-box {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #000000;
+    color: #66FF99;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.reloj-box {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: #000000;
+    color: #66FF99;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+/* ESTILOS DEL SLIDER CON FLECHAS */
+.slider-container {
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    position: relative; /* Necesario para posicionar las flechas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-img {
+    height: 180px;
+    border: 2px solid #000000;
+    max-width: 80%; /* Asegura que la imagen no tape las flechas en pantallas pequeñas */
+}
+
+/* Estilos para las flechas anterior y siguiente */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
+    user-select: none;
+    text-decoration: none;
+}
+
+/* Posición de la flecha derecha */
+.next {
+    right: 10%; /* Ajustado para que no se pegue al borde */
+    border-radius: 3px 0 0 3px;
+}
+
+/* Posición de la flecha izquierda */
+.prev {
+    left: 10%; /* Ajustado para que no se pegue al borde */
+    border-radius: 0 3px 3px 0;
+}
+
+/* Efecto hover al pasar el ratón por las flechas */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.style13 {
+	border: 2px solid #000000;
+	max-width: 80%; /* Asegura que la imagen no tape las flechas en pantallas pequeñas */
+}
+</style>
+
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button9.jpg',/*url*/'buttonA.jpg')">
+
+<div class="reloj-box">
+    <span id="reloj-texto">Cargando...</span>
+</div>
+
+<div class="contador-box">
+    VISITAS: <span id="numero-visitas">0</span>
+</div>
+
+<script type="text/javascript">
+    var n = localStorage.getItem('contador_internet');
+    if (n === null) { n = 0; }
+    n++;
+    localStorage.setItem('contador_internet', n);
+    document.getElementById('numero-visitas').innerHTML = n;
+
+    function actualizarReloj() {
+        var fecha = new Date();
+        document.getElementById('reloj-texto').innerHTML = fecha.toLocaleString();
+    }
+    setInterval(actualizarReloj, 1000);
+    actualizarReloj();
+</script>
+
+<div class="scroll-container">
+
+<table style="width:1366px;height:800px;" class="style4" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="4" class="style1" style="height: 163px">INTERNET</td>
+</tr>
+
+<tr>
+<td valign="top" class="style5" style="width: 245px; height: 691px;">
+
+<table style="width:254px;" class="style2" cellpadding="0" cellspacing="2">
+
+<tr>
+<td class="style10">
+<a href="http://go.microsoft.com/fwlink/p/?LinkId=255141">
+<img id="img11" src="button26.jpg" width="240" height="48" class="style11" alt="Microsoft" /></a>
+</td>
+</tr>
+
+<tr>
+<td class="style5">
+<a href="definición%20(2).htm">
+<img id="img9" src="button23.jpg" width="240" height="48" class="style11" alt="Historia" /></a><a href="historia.htm">
+</a>
+</td>
+</tr>
+
+<tr>
+<td class="style5">
+<a href="historia.htm">
+<img id="img2" src="buttonE.jpg" width="240" height="48" class="style11" alt="Historia2" /></a>
+</td>
+</tr>
+
+<tbody class="submenu-group">
+	<tr>
+		<td class="style5">
+			<a href="TARJETAS%20(2).htm">
+				<img id="img_menu_trigger" src="button11.jpg" width="240" height="48" class="style11" alt="Tarjetas" /></a><a href="tarjetas.htm">
+				</a>
+		</td>
+	</tr>
+
+	<tr class="submenu-trm">
+		<td class="style5">
+			<a href="tarjetas%20red.htm">TARJETA DE RED</a>
+		</td>
+	</tr>
+
+	<tr class="submenu-trm">
+		<td class="style5">
+			<a href="modem.htm">MÓDEM</a>
+		</td>
+	</tr>
+</tbody>
+<tr>
+<td class="style5">
+<a href="NAVEGADORES.htm">
+<img id="img5" src="button17.jpg" width="240" height="48" class="style11" alt="Navegadores" />
+</a>
+</td>
+</tr>
+
+<tr>
+<td class="style5">
+<a href="PROTOCOLOS.htm">
+<img id="img6" src="button1A.jpg" width="240" height="48" class="style11" alt="Protocolos" />
+</a>
+</td>
+</tr>
+
+<tr>
+<td class="style5">
+<a href="PAGINA-WEB.htm">
+<img id="img7" src="button1D.jpg" width="240" height="48" class="style11" alt="Página Web" />
+</a>
+</td>
+</tr>
+
+<tr>
+<td class="style5">
+<a href="FUNCIONESDEINTERNET.htm">
+<img id="img8" src="button20.jpg" width="240" height="48" class="style11" alt="Funciones" />
+</a>
+</td>
+</tr>
+
+<tr>
+<td class="style5">
+<a href="PRIVACIDAD%20Y%20SEGURIDAD.htm">
+<img id="img10" src="button4A.jpg" width="240" height="48" class="style11" alt="Privacidad" /></a><a href="PRIVACIDADYSEGURIDADENREDESSOCIALES.htm">
+</a>
+</td>
+</tr>
+
+</table>
+    <span id="reloj-texto"></span>
+<a href="PRIVACIDAD%20Y%20SEGURIDAD.htm">
+<img id="img12" src="button4A.jpg" width="240" height="48" class="style11" alt="Privacidad" /></a><br />
+<a href="FORO.htm">
+<img style="border: 0" id="img13" src="button8.jpg" height="20" width="100" alt="FORO" onmouseover="FP_swapImg(1,0,/*id*/'img13',/*url*/'button9.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img13',/*url*/'button8.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img13',/*url*/'buttonA.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img13',/*url*/'button9.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Glow Capsule 2; fp-font-size: 12" fp-title="FORO" --></a></td>
+
+<td class="style9" style="width: 16px;"></td>
+
+<td valign="top" style="width: 1130px;">
+<p class="style8">&nbsp;</p>
+
+<div class="texto-scroll" style="height: 297px">
+    <p class="style12">La informática o computación es la ciencia que estudia los métodos y técnicas para almacenar, procesar y transmitir información de manera automatizada.</p>
+    <p class="style12">No existe realmente una definición única y universal de lo que la informática es.</p>
+    <p class="style12">Por eso en muchos espacios académicos suelen diferenciar entre esta disciplina y las ciencias de la computación.</p>
+    <p class="style12">Otros consideran como subdisciplinas de la informática a la Ingeniería informática, Sistemas de información y Software.</p>
+	<p class="style12">Esta página web esta elaborada a partir de un
+	<a href="TRABAJO%20TIC.doc">TRABAJO</a> de tic.</p>
+	<p class="style12">&nbsp;</p>
+</div>
+
+<div class="slider-container">
+    <a class="prev" onclick="moverSlides(-1)">&#10094;</a>
+    
+    <img id="miSlider" src="foto1.jpg" class="style13" alt="Diapositivas" width="358" height="239" />
+    
+    <a class="next" onclick="moverSlides(1)">&#10095;</a>
+</div>
+
+<script type="text/javascript">
+    var imagenes = ['foto1.jpg', 'foto2.jpg', 'foto3.jpg'];
+    var indice = 0;
+    var timer; // Variable para controlar el temporizador automático
+
+    // Función para mostrar la imagen actual basada en el índice
+    function mostrarImagen() {
+        var imagen = document.getElementById('miSlider');
+        if (imagen) {
+            imagen.src = imagenes[indice];
+        }
+    }
+
+    // Función para el cambio automático
+    function cambioAutomatico() {
+        indice++;
+        if (indice >= imagenes.length) { indice = 0; }
+        mostrarImagen();
+    }
+
+    // Función para las flechas (manual)
+    function moverSlides(n) {
+        clearInterval(timer); // Paramos el automático un momento
+        indice += n;
+        
+        // Control de límites (carrusel infinito)
+        if (indice >= imagenes.length) { indice = 0; }
+        if (indice < 0) { indice = imagenes.length - 1; }
+        
+        mostrarImagen();
+        
+        // Reiniciamos el automático
+        timer = setInterval(cambioAutomatico, 3000);
+    }
+    
+    // Iniciar el temporizador automático al cargar
+    timer = setInterval(cambioAutomatico, 3000);
+</script>
+
+</td>
+
+</tr>
+</table>
+
+</div>
+</body>
+</html>
